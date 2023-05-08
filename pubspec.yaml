@@ -35,9 +35,26 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
 
+  
 dev_dependencies:
   flutter_test:
     sdk: flutter
+
+#for splashscreen
+  flutter_native_splash: ^2.0.1+1
+
+flutter_native_splash:
+  image: image/cics.png
+  #the color code must be in a hex.
+  color: "#FFFFFF"
+
+# Run the commands to generate the splashscreen
+# 1. flutter clean (clear the previous build)
+# 2. flutter pub get (to install whats inside the pubspec.yaml)
+# 3. flutter pub run flutter_native_splash:create (indicate to run the dependency of the splashscreen)
+
+
+
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
@@ -58,8 +75,8 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
+  assets:
+    - image/cics.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
