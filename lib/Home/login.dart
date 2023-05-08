@@ -14,6 +14,7 @@ class _loginPageState extends State<loginPage> {
         body: SingleChildScrollView(
       child: Column(
         children: <Widget>[
+          //image indication code
           Padding(
             padding: const EdgeInsets.only(top: 60.0),
             child: Center(
@@ -27,6 +28,7 @@ class _loginPageState extends State<loginPage> {
             ),
           ),
           const SizedBox(height: 30),
+          //email code
           Padding(
             //padding: const EdgeInsets.only(left:15.0,right: 15.0,top:0,bottom: 0),
             padding: EdgeInsets.symmetric(horizontal: 15),
@@ -37,6 +39,7 @@ class _loginPageState extends State<loginPage> {
                   hintText: 'Enter valid email'),
             ),
           ),
+          //password code
           Padding(
             padding: const EdgeInsets.only(
                 left: 15.0, right: 15.0, top: 15, bottom: 0),
@@ -49,13 +52,8 @@ class _loginPageState extends State<loginPage> {
                   hintText: 'Enter your password'),
             ),
           ),
-          FlatButton(
-            onPressed: () {},
-            child: Text(
-              'Forgot Password',
-              style: TextStyle(color: Colors.blue, fontSize: 15),
-            ),
-          ),
+
+          //login button
           Container(
             height: 50,
             width: 250,
@@ -64,7 +62,6 @@ class _loginPageState extends State<loginPage> {
             child: ElevatedButton(
               onPressed: () {
                 //navigator.push indicates of open another screen once it was click
-
                 //  Navigator.push(
                 //    context, MaterialPageRoute(builder: (_) => HomePage()));
               },
@@ -73,9 +70,6 @@ class _loginPageState extends State<loginPage> {
                 style: TextStyle(color: Colors.white, fontSize: 25),
               ),
             ),
-          ),
-          SizedBox(
-            height: 130,
           ),
         ],
       ),
