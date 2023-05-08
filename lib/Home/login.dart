@@ -1,3 +1,5 @@
+import 'dart:ffi';
+
 import 'package:flutter/material.dart';
 
 class loginPage extends StatefulWidget {
@@ -52,8 +54,8 @@ class _loginPageState extends State<loginPage> {
                   hintText: 'Enter your password'),
             ),
           ),
-
           //login button
+          SizedBox(height: 20),
           Container(
             height: 50,
             width: 250,
